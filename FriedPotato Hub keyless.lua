@@ -1,15 +1,4 @@
---[[
-    Made by FriedPotato
-
-    This script is free to use, edit, modify, and redistribute.
-    You do NOT need permission from me to change or use any part of this code.
-
-    Credits are appreciated but not required.
-]]
---[[
-    GUIDE
-
-    local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Script%20Tools/Notification%20System"))()
+local Notify = loadstring(game:HttpGet("https://raw.githubusercontent.com/yes1nt/yes/refs/heads/main/Script%20Tools/Notification%20System"))()
 
     format:
     Notify.Type(Title, Caption, Duration, Callback)
