@@ -78,6 +78,8 @@ InfoTab:CreateLabel("Version: v1.0")
 --// PESTAÑA: UTILIDADES
 local UtilitiesTab = Window:CreateTab("Utilidades", 4483362458)
 
+UtilitiesTab:CreateSection("Herramientas")
+
 --// INFINITY YIELD
 UtilitiesTab:CreateButton({
     Name = "Infinite Yield",
@@ -86,7 +88,7 @@ UtilitiesTab:CreateButton({
     end
 })
 
-UtilitiesTab:CreateSection("Herramientas")
+
 --// NOTIFICACIÓN
 Rayfield:Notify({
     Title = "Fatal Floors Script",
