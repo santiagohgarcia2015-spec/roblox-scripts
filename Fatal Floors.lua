@@ -76,9 +76,37 @@ InfoTab:CreateParagraph({
 InfoTab:CreateLabel("Version: v1.0")
 
 --// PESTAÑA: UTILIDADES
+
+--// PESTAÑA: UTILIDADES
 local UtilitiesTab = Window:CreateTab("Utilidades", 4483362458)
 
-UtilitiesTab:CreateSection("Herramientas")
+--// MOVIMIENTO
+UtilitiesTab:CreateSection("Movimiento")
+
+--// FLY
+UtilitiesTab:CreateToggle({
+    Name = "Fly",
+    CurrentValue = false,
+    Flag = "AdminFly",
+    Callback = function(Value)
+        -- Aquí conectaremos el sistema Fly.
+        print("Fly:", Value)
+    end
+})
+
+--// SPEED
+UtilitiesTab:CreateSlider({
+    Name = "WalkSpeed",
+    Range = {16, 100},
+    Increment = 1,
+    Suffix = "Speed",
+    CurrentValue = 16,
+    Flag = "AdminSpeed",
+    Callback = function(Value)
+        -- Aquí conectaremos el sistema Speed.
+        print("WalkSpeed:", Value)
+    end
+})
 
 --// NOTIFICACIÓN
 Rayfield:Notify({
