@@ -78,6 +78,14 @@ InfoTab:CreateLabel("Version: v1.0")
 --// PESTAÑA: UTILIDADES
 local UtilitiesTab = Window:CreateTab("Utilidades", 4483362458)
 
+--// INFINITY YIELD
+UtilitiesTab:CreateButton({
+    Name = "Infinite Yield",
+    Callback = function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    end
+})
+
 UtilitiesTab:CreateSection("Herramientas")
 --// NOTIFICACIÓN
 Rayfield:Notify({
