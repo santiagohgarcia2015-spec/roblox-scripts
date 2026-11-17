@@ -1,5 +1,5 @@
 
---// ADMIN PANEL - BASE
+--// FATAL FLOORS
 --// Rayfield UI
 --// Theme: Blue Midnight
 
@@ -52,9 +52,9 @@ local CustomTheme = {
 
 --// VENTANA PRINCIPAL
 local Window = Rayfield:CreateWindow({
-    Name = "Admin Panel | v1.0",
-    LoadingTitle = "Admin Panel",
-    LoadingSubtitle = "Blue Midnight",
+    Name = "Fatal Floors | v1.0",
+    LoadingTitle = "Fatal Floors Script",
+    LoadingSubtitle = "By SantiGodPlay",
     Theme = CustomTheme,
 
     ConfigurationSaving = {
@@ -70,7 +70,7 @@ InfoTab:CreateSection("Información del panel")
 
 InfoTab:CreateParagraph({
     Title = "Bienvenido",
-    Content = "Bienvenido al panel de administración."
+    Content = "¡Bienvenido a este exploit de Fatal Floors en Roblox, donde podrás farmear fragmentos, badges, pisos y más!"
 })
 
 InfoTab:CreateLabel("Version: v1.0")
@@ -82,7 +82,7 @@ UtilitiesTab:CreateSection("Herramientas")
 
 --// NOTIFICACIÓN
 Rayfield:Notify({
-    Title = "Admin Panel",
+    Title = "Fatal Floors Script",
     Content = "Panel Blue Midnight cargado correctamente.",
     Duration = 5
 })
